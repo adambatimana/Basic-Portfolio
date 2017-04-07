@@ -1,0 +1,71 @@
+#container{
+	width: 100%;
+	margin: 0 auto;
+
+}
+body{
+
+}
+h1 {
+
+
+}
+a{
+	text-decoration: none;
+}
+nav{
+	
+	padding: 1em;
+}
+nav li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 1em;
+}
+nav ul{
+	text-align: right;
+
+}
+img{
+	float: left;
+	margin: 0 1em 0 0;
+	width:40%;
+}
+
+main{
+	width: 60%;
+	float: left;
+}
+section{
+	width: 80%;
+	margin: 0 auto;
+	background: khaki;
+	padding: 1em;
+
+}
+section.aside{
+	background: blue;
+	width: 50%;
+}
+aside{
+	width:40%; 
+	
+	float: right;
+
+}
+
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+ .cf {
+ 	*zoom: 1;
+ }
