@@ -1,67 +1,222 @@
-#container{
-	width: 100%;
-	margin: 0 auto;
+/*
+    Teal color (used for headings and backgrounds): #4aaaa5
+    Regular font color (used for paragraphs and all text besides the headings) = #777777
+    Main header background color: #ffffff
+    Main header border color: #cccccc
+    Footer background color: #666666
+    Main content background color: #ffffff
+    Main content border color: #dddddd
+    headers 'Georgia', Times, Times New Roman, serif;
+    */
+    *{
+    	box-sizing: border-box;
+    }
 
-}
-body{
+    #container{
+    	width: 100%;
+    	margin: 0 auto;
 
-}
-h1 {
+    }
+    body{
+    	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    	width: 1024px;
+    	color: #777777;
+    	margin: 0 auto;
 
+    }
+    #backgroundspace{
+    	background-image: url(../images/pinkdust.png);
 
-}
-a{
-	text-decoration: none;
-}
-nav{
-	
-	padding: 1em;
-}
-nav li{
-	list-style: none;
-	display: inline-block;
-	margin: 0 1em;
-}
-nav ul{
-	text-align: right;
+    }
+    h1 {
+    	font-family: 'Georgia', Times, Times New Roman, serif;
+    	font-size: 1.5em;
+    	color: #4aaaa5;
+    	padding:.5em 0;
+    }
 
-}
-img{
+    h2{
+    	font-family: 'Georgia', Times, Times New Roman, serif;
+    	font-size: 1em;
+    	color: #4aaaa5;
+    	text-align: center;
+    	padding: 0 0 .5em 0;
+        font-weight: bold;
+    }
+    a{
+    	text-decoration: none;
+    }
+    hr{
+    	border-width: 1px;
+    	color: lightgray;
+    	border-style: solid;
+    	margin-bottom: 1.5em;
+    }
+    #contactPage main section hr{
+        margin: 0;
+    }
+    nav{
+    	background: white;
+    	padding: 1em;
+    	height: 60px;
+    	border-bottom: solid 2px gray;
+    	
+    }
+
+  header p a {
+    font-family: 'Georgia', Times, Times New Roman, serif;
 	float: left;
-	margin: 0 1em 0 0;
-	width:40%;
+	height: 60px;
+	padding: 0 16px ;
+	color: #FFF;
+	text-decoration: none;  
+	font-size: 1.5em;
+	font-weight: normal;
+	line-height: 2.25em;
+	background: #4aaaa5;
+    position: relative;
+    left: 2.75em;
+}
+    nav li{
+    	list-style: none;
+    	display: inline-block;
+
+    	
+    }
+    nav ul li a {
+    	padding:0 1em;
+    }
+    nav ul li a:link{
+    	color: #666;
+    }
+    nav ul li a:visited{
+    	color: #666666;
+    }
+    nav ul li a:hover{
+    	color: #4aaaa5;
+    	transition: 1s ease;
+    }
+
+
+    nav ul{
+    	text-align: right;
+    	float: right;
+    	width: 50%;
+        position: relative;
+        right: 5em;
+        padding-top: .25em;
+
+    }
+    .social{
+    	text-align: center;
+
+    }
+    .si{
+
+    	display: inline-block;
+
+    }
+    .si a{
+    	text-indent: -9999px;
+
+    }
+    img{
+    	float: left;
+    	margin: 0 1em 0 0;
+    	width:40%;
+    }
+    a img{
+    	width: 50px;
+    	height: 50px;
+    	margin: 0 0 0 .5em;
+    	padding: 0;
+    }
+    main{
+    	width: 650px;
+    	float: left;
+    	margin-top: 2em;
+    	margin-bottom: 2em;
+
+    }
+    section{
+    	width: 80%;
+    	margin: 0 auto;
+    	background: #FFF;
+    	padding: 1em;
+
+    }
+
+label{
+    display: inline-block;
+    padding-bottom: .5em;
+    margin-top: 1em;
+}
+input{
+    margin-bottom: 1em;
+    display: block;
+    width: 70%;
+    padding: 1em;
+}
+label+textarea{
+    display: block;
+    border: solid 1px lightgray;
+}
+input[type=submit]{
+    background: #4aaaa5;
+    border: none;
+    padding:10px ;
+    width: 20%;
+    color: #fff;
+    cursor: pointer;
 }
 
-main{
-	width: 60%;
-	float: left;
-}
-section{
-	width: 80%;
-	margin: 0 auto;
-	background: khaki;
-	padding: 1em;
+    .aside{
+    	background: #FFF;
+    	/*	width: 270px;*/
+    }
+    aside{
+    	width:270px; 
+    	margin-top: 2em;
+    	float: left;
+    }
 
-}
-section.aside{
-	background: blue;
-	width: 50%;
-}
-aside{
-	width:40%; 
-	
-	float: right;
+    footer{
+    	background: #666666;
+    	height: 60px;
+    	border-top: solid 5px #4aaaa5;
 
-}
+    }
+    footer p{
+    	text-align: center;
+    	padding-top: 1.5em;
+    	color: #fff;
+    	font-size: .75em;
+    }
 
-.cf:before,
-.cf:after {
-	content: " ";
-	display: table;
-}
-.cf:after {
-	clear: both;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .cf{
+    	overflow: auto;
+    }
+    .cf:before,
+    .cf:after {
+    	content: " ";
+    	display: table;
+    }
+    .cf:after {
+    	clear: both;
+    }
 /**
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
