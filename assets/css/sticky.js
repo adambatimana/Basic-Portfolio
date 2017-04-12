@@ -1,14 +1,14 @@
-$(window).load(function() {
-  $("#footer").stickyFooter();
-});
+$window = $(window);
+$window.scroll(function() {
+  $scroll_position = $window.scrollTop();
+    if ($scroll_position > 60) { // if body is scrolled down by 300 pixels
+        $('#footer').addClass('sticky');
 
-$("#footer").stickyFooter({
-  // The class that is added to the footer.
-  class: 'sticky-footer',
-
-  // The footer will stick to the bottom of the given frame. The parent of the footer is used when an empty string is given.
-  frame: '',
-
-  // The content of the frame. You can use multiple selectors. e.g. "#header, #body"
-  content: '#page'
-});
+        // to get rid of jerk
+        header_height = $('#footer').innerHeight();
+        $('body').css('padding-top' , header_height);
+    } else {
+        $('body').css('padding-top' , '0');
+        $('#footer').removeClass('sticky');
+    }
+ });
