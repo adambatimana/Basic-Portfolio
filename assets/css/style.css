@@ -85,11 +85,12 @@
     nav li{
     	list-style: none;
     	display: inline-block;
-
-    	
+        
     }
     nav ul li a {
-    	padding:0 1em;
+    	padding:1.25em 1em;
+        
+
     }
     nav ul li a:link{
     	color: #666;
@@ -99,7 +100,9 @@
     }
     nav ul li a:hover{
     	color: #4aaaa5;
-    	transition: 1s ease;
+    	transition: .5s ease;
+        border-bottom: solid 4px #4aaaa5;
+
     }
 
 
@@ -112,6 +115,7 @@
         padding-top: .25em;
 
     }
+
     .social{
     	text-align: center;
 
